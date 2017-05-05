@@ -1,0 +1,7 @@
+rootProject.name = 'c3r'
+include 'Algorithm'
+include 'Domain'
+include 'Evaluate'
+//include 'Visual'
+include 'Model'
+include 'AOI'

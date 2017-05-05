@@ -1,0 +1,25 @@
+apply plugin: 'java'
+apply from: 'http://dl.bintray.com/content/shemnon/javafx-gradle/8.1.1/javafx.plugin'
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDirs = ["src/main/java"]
+            includes = ["**/*.fxml"]
+        }
+    }
+}
+
+javafx {
+    appID 'SpectralClustering'
+    appName 'Spectral Clustering'
+    mainClass 'com.samborskiy.visual.clustering.Window'
+}
+
+dependencies {
+    compile project(':Algorithm')
+}

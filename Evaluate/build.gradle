@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories {
+    mavenCentral()
+}
+
+mainClassName = "sg.edu.nus.comp.lms.ModularityMaximization"
+
+dependencies {
+    compile project(':Model')
+    compile project(':AOI')
+
+    compile 'com.squareup.retrofit2:retrofit:2.0.0'
+    compile 'com.squareup.retrofit2:converter-jackson:2.0.0'
+
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.hamcrest:hamcrest-all:1.3'
+}
